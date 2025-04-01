@@ -1,6 +1,9 @@
 ﻿@{
-    ViewData["Title"] = "Shop Details";
+    ViewData["Title"] = "Shop – Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Shop Details</h2>
-<p>Here you’ll find more detailed information about shop items.</p>
+@model int
+
+<h2>Product Details</h2>
+<p>This page displays information for Product ID: <strong>@Model</strong></p>

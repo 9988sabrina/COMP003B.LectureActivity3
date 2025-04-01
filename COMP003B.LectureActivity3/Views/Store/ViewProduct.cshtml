@@ -1,8 +1,9 @@
 ﻿@{
-    ViewData["Title"] = "View Product";
+    ViewData["Title"] = "Store – View Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Product Info from URL Parameters</h2>
+@model int
 
-<p><strong>Name:</strong> @ViewBag.Name</p>
-<p><strong>Price:</strong> $@ViewBag.Price</p>
+<h2>Product Detail</h2>
+<p>You are viewing product with ID: <strong>@Model</strong></p>
