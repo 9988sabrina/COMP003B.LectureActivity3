@@ -4,14 +4,22 @@ namespace COMP003B.LectureActivity3.Controllers
 {
     public class ShopController : Controller
     {
+        //GET: /Shop/
+        [HttpGet]
         public IActionResult Index()
         {
+            // The view() method returns a view result that rendres a view to the respnse.
             return View();
         }
 
-        public IActionResult Details()
+        // Get:/Shop/Details(in id)
+        [HttpGet]
+
+        public IActionResult Details(int id)
         {
-            return View();
+            // The view() method returns a view result that renders a view to the response.
+            // The id parameter is passed to the view.
+            return View(id);
         }
     }
 }
